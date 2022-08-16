@@ -65,4 +65,9 @@ router.get('/get',function (req,res) {
     res.render('baiviet', {data: result})
   })
 })
+router.get('/getUsers', function (req, res) {
+  bv.find({}, function (error, result) {
+    res.send(result);
+  })
+})
 module.exports = router;
