@@ -57,7 +57,7 @@ router.post('/addbaiviet',upload.single('anh'),async function (req, res) {
 
   // lấy lại danh sách và hiển thị trên trang index
   bv.find({}, function (error, result) {
-    res.render('index', {data: result})
+    res.render('index', {Title: result.length})
   })
 })
 router.get('/get',function (req,res) {
