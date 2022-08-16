@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+
+<h1>hé</h1>
+<% for(var i = 0 ; i < data.length ; i++){ %>
+
+    <hr>
+    <h1><%= data[i].tieude %></h1>
+    <h1><%= data[i].noidung %></h1>
+    <h1><%= data[i].baiviet %></h1>
+    <!--Dinh nghia button xoa theo ID-->
+    <img src="<%=data[i].urlAvata%>" width="150px" height="150px">
+
+
+<% } %>
+
+</body>
+</html>
